@@ -110,6 +110,14 @@ select:active {
   font-family: "Nanum Extra Bold";
   src: url(../fonts/NanumMyeongjo-ExtraBold.woff2);
 }
+@font-face {
+  font-family: "Courgette Regular";
+  src: url(../fonts/Courgette-Regular.woff);
+}
+@font-face {
+  font-family: "Freeman Regular";
+  src: url(../fonts/Freeman-Regular.woff2);
+}
 header {
   display: flex;
   padding: 10px 30px;
@@ -226,3 +234,111 @@ main .reserve-table .submit {
   border-radius: 10px;
   margin: 10px auto;
 }
+main .product-menu h3 {
+  display: flex;
+  font-family: "Courgette Regular";
+  font-weight: bold;
+  font-size: 25px;
+  color: #d90429;
+  justify-content: center;
+  cursor: pointer;
+}
+main .product-menu h3:before, main .product-menu h3:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid;
+  margin: auto;
+}
+main .product-menu h3:before {
+  margin-left: 480px;
+  margin-right: 8px;
+}
+main .product-menu h3:after {
+  margin-right: 480px;
+  margin-left: 8px;
+}
+main .product-menu .second-heading {
+  font-size: 35px;
+  color: #000;
+  text-align: center;
+  font-family: "Freeman regular";
+  padding-top: 20px;
+  cursor: pointer;
+}
+main .product-menu .food-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+main .product-menu .food-list .food-type {
+  display: flex;
+  padding-bottom: 20px;
+}
+main .product-menu .food-list .food-type .icon-img {
+  cursor: pointer;
+  margin: 0 5px;
+}
+main .product-menu .food-list .food-type .food {
+  display: flex;
+  flex-direction: column;
+  font-family: "Freeman regular";
+  cursor: pointer;
+}
+main .product-menu .food-list .food-type .food .food-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #757575;
+}
+main .product-menu .food-list .food-type .food .typeOfFood {
+  font-weight: bold;
+  color: #000;
+}
+main .product-menu .allFoodContainer {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+main .product-menu .allFoodContainer .food-container {
+  width: 500px;
+  padding: 0 20px;
+}
+main .product-menu .allFoodContainer .food-container .breakfast-container {
+  display: flex;
+  padding-bottom: 20px;
+}
+main .product-menu .allFoodContainer .food-container .breakfast-container .foodImg {
+  cursor: pointer;
+  margin-right: 20px;
+}
+main .product-menu .allFoodContainer .food-container .breakfast-container .description {
+  display: flex;
+  flex-direction: column;
+}
+main .product-menu .allFoodContainer .food-container .breakfast-container .description p {
+  padding-top: 8px;
+  font-style: italic;
+  font-family: "Nanum Bold";
+  font-size: 15px;
+  cursor: pointer;
+}
+main .product-menu .allFoodContainer .food-container .breakfast-container .description .price-container {
+  display: flex;
+  border-bottom: 1px solid rgb(205, 200, 200);
+  padding-bottom: 8px;
+  align-items: center;
+}
+main .product-menu .allFoodContainer .food-container .breakfast-container .description .price-container h2 {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Freeman regular";
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+main .product-menu .allFoodContainer .food-container .breakfast-container .description .price-container span {
+  margin-left: auto;
+  color: #d90429;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
