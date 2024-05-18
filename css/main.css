@@ -234,6 +234,7 @@ main .reserve-table .submit {
   border-radius: 10px;
   margin: 10px auto;
 }
+
 main .product-menu h3 {
   display: flex;
   font-family: "Courgette Regular";
@@ -341,4 +342,48 @@ main .product-menu .allFoodContainer .food-container .breakfast-container .descr
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-}/*# sourceMappingURL=main.css.map */
+=======
+main .products-menu {
+  background-color: #c7c7c7;
+}
+main .products-menu .section-title p {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-family: "Nanum Regular";
+  color: #000;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+}
+main .products-menu .menu-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .products-menu .menu-container img {
+  width: 70px;
+  border-radius: 50%;
+  float: left;
+  border: 2px solid;
+}
+main .products-menu .menu-container a {
+  padding-right: 10px;
+  position: relative;
+  font-weight: 700;
+  color: #000;
+}
+main .products-menu .menu-container span {
+  background: #000;
+  position: relative;
+  padding: 0 10px;
+  font-weight: 600;
+  color: #cda45e;
+}
+main .products-menu .menu-container .menu-item {
+  color: #d90429;
+  padding: 0 200px;
+  margin: 50px 0px;
+  width: 50%;
+  font-family: "Nanum Bold";
+
+}
