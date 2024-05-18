@@ -234,119 +234,10 @@ main .reserve-table .submit {
   border-radius: 10px;
   margin: 10px auto;
 }
-
-main .product-menu h3 {
-  display: flex;
-  font-family: "Courgette Regular";
-  font-weight: bold;
-  font-size: 25px;
-  color: #d90429;
-  justify-content: center;
-  cursor: pointer;
-}
-main .product-menu h3:before, main .product-menu h3:after {
-  content: "";
-  flex: 1 1;
-  border-bottom: 2px solid;
-  margin: auto;
-}
-main .product-menu h3:before {
-  margin-left: 480px;
-  margin-right: 8px;
-}
-main .product-menu h3:after {
-  margin-right: 480px;
-  margin-left: 8px;
-}
-main .product-menu .second-heading {
-  font-size: 35px;
-  color: #000;
-  text-align: center;
-  font-family: "Freeman regular";
-  padding-top: 20px;
-  cursor: pointer;
-}
-main .product-menu .food-list {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-main .product-menu .food-list .food-type {
-  display: flex;
-  padding-bottom: 20px;
-}
-main .product-menu .food-list .food-type .icon-img {
-  cursor: pointer;
-  margin: 0 5px;
-}
-main .product-menu .food-list .food-type .food {
-  display: flex;
-  flex-direction: column;
-  font-family: "Freeman regular";
-  cursor: pointer;
-}
-main .product-menu .food-list .food-type .food .food-item {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #757575;
-}
-main .product-menu .food-list .food-type .food .typeOfFood {
-  font-weight: bold;
-  color: #000;
-}
-main .product-menu .allFoodContainer {
-  padding-top: 50px;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
-}
-main .product-menu .allFoodContainer .food-container {
-  width: 500px;
-  padding: 0 20px;
-}
-main .product-menu .allFoodContainer .food-container .breakfast-container {
-  display: flex;
-  padding-bottom: 20px;
-}
-main .product-menu .allFoodContainer .food-container .breakfast-container .foodImg {
-  cursor: pointer;
-  margin-right: 20px;
-}
-main .product-menu .allFoodContainer .food-container .breakfast-container .description {
-  display: flex;
-  flex-direction: column;
-}
-main .product-menu .allFoodContainer .food-container .breakfast-container .description p {
-  padding-top: 8px;
-  font-style: italic;
-  font-family: "Nanum Bold";
-  font-size: 15px;
-  cursor: pointer;
-}
-main .product-menu .allFoodContainer .food-container .breakfast-container .description .price-container {
-  display: flex;
-  border-bottom: 1px solid rgb(205, 200, 200);
-  padding-bottom: 8px;
-  align-items: center;
-}
-main .product-menu .allFoodContainer .food-container .breakfast-container .description .price-container h2 {
-  font-size: 15px;
-  font-weight: bold;
-  font-family: "Freeman regular";
-  letter-spacing: 0.8px;
-  cursor: pointer;
-}
-main .product-menu .allFoodContainer .food-container .breakfast-container .description .price-container span {
-  margin-left: auto;
-  color: #d90429;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-=======
-main .products-menu {
+main .ilija .products-menu {
   background-color: #c7c7c7;
 }
-main .products-menu .section-title p {
+main .ilija .products-menu .section-title p {
   display: flex;
   justify-content: center;
   font-size: 36px;
@@ -356,34 +247,143 @@ main .products-menu .section-title p {
   padding: 0;
   margin: 0;
 }
-main .products-menu .menu-container {
+main .ilija .products-menu .menu-container {
   display: flex;
   flex-wrap: wrap;
 }
-main .products-menu .menu-container img {
+main .ilija .products-menu .menu-container img {
   width: 70px;
   border-radius: 50%;
   float: left;
   border: 2px solid;
 }
-main .products-menu .menu-container a {
+main .ilija .products-menu .menu-container a {
   padding-right: 10px;
   position: relative;
   font-weight: 700;
   color: #000;
 }
-main .products-menu .menu-container span {
+main .ilija .products-menu .menu-container span {
   background: #000;
   position: relative;
   padding: 0 10px;
   font-weight: 600;
   color: #cda45e;
 }
-main .products-menu .menu-container .menu-item {
+main .ilija .products-menu .menu-container .menu-item {
   color: #d90429;
   padding: 0 200px;
   margin: 50px 0px;
   width: 50%;
   font-family: "Nanum Bold";
-
+}
+main .elena .allFoodContainer {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+main .elena .allFoodContainer .food-container {
+  width: 500px;
+  padding: 0 20px;
+}
+main .elena .allFoodContainer .food-container .breakfast-container {
+  display: flex;
+  padding-bottom: 20px;
+}
+main .elena .allFoodContainer .food-container .breakfast-container .foodImg {
+  cursor: pointer;
+  margin-right: 20px;
+}
+main .elena .allFoodContainer .food-container .breakfast-container .description {
+  display: flex;
+  flex-direction: column;
+}
+main .elena .allFoodContainer .food-container .breakfast-container .description p {
+  padding-top: 8px;
+  font-style: italic;
+  font-family: "Nanum Bold";
+  font-size: 15px;
+  cursor: pointer;
+}
+main .elena .allFoodContainer .food-container .breakfast-container .description .price-container {
+  display: flex;
+  border-bottom: 1px solid rgb(205, 200, 200);
+  padding-bottom: 8px;
+  align-items: center;
+}
+main .elena .allFoodContainer .food-container .breakfast-container .description .price-container h2 {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Freeman regular";
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+main .elena .allFoodContainer .food-container .breakfast-container .description .price-container span {
+  margin-left: auto;
+  color: #d90429;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+main .elena .product-menu h3 {
+  display: flex;
+  font-family: "Courgette Regular";
+  font-weight: bold;
+  font-size: 25px;
+  color: #d90429;
+  justify-content: center;
+  cursor: pointer;
+  max-width: 40%;
+  margin: auto;
+}
+main .elena .product-menu h3:before, main .elena .product-menu h3:after {
+  content: "";
+  flex: 1 1;
+  width: 300px;
+  height: 2px;
+  background-color: #d90429;
+  margin: auto;
+}
+main .elena .product-menu h3:before {
+  margin-right: 8px;
+}
+main .elena .product-menu h3:after {
+  margin-left: 8px;
+}
+main .elena .product-menu .second-heading {
+  font-size: 35px;
+  color: #000;
+  text-align: center;
+  font-family: "Freeman regular";
+  padding-top: 20px;
+  cursor: pointer;
+}
+main .elena .product-menu .food-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+main .elena .product-menu .food-list .food-type {
+  display: flex;
+  padding-bottom: 20px;
+}
+main .elena .product-menu .food-list .food-type .icon-img {
+  cursor: pointer;
+  margin: 0 5px;
+}
+main .elena .product-menu .food-list .food-type .food {
+  display: flex;
+  flex-direction: column;
+  font-family: "Freeman regular";
+  cursor: pointer;
+}
+main .elena .product-menu .food-list .food-type .food .food-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #757575;
+}
+main .elena .product-menu .food-list .food-type .food .typeOfFood {
+  font-weight: bold;
+  color: #000;
 }
