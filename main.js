@@ -13,7 +13,20 @@ input.addEventListener("input", (event) => {
 var today = new Date();
 var formattedDate = today.toISOString().split("T")[0];
 document.getElementById("textDate").min = formattedDate;
-console.log(formattedDate);
-console.log(textDate);
-console.log(today.toLocaleDateString);
+//console.log(formattedDate);
+//console.log(textDate);
+//console.log(today.toLocaleDateString);
 //alert("Your date is wrong, try again!");
+
+//Student Menues
+const studentName = document.querySelectorAll(".student-name");
+const studentMenu = document.querySelectorAll(".student-menu");
+
+for (const [i, heading] of studentName.entries()) {
+  studentName[i].addEventListener("click", (e) => {
+    studentMenu.forEach((student) =>
+      student.classList.remove("js-student-menu")
+    );
+    studentMenu[i].classList.add("js-student-menu");
+  });
+}

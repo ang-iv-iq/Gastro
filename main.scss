@@ -210,15 +210,15 @@ select {
   src: url(../fonts/NanumMyeongjo-ExtraBold.woff2);
 }
 
-@font-face {
-  font-family: "Courgette Regular";
-  src: url(../fonts/Courgette-Regular.woff);
-}
+// @font-face {
+//   font-family: "Courgette Regular";
+//   src: url(../fonts/Courgette-Regular.woff);
+// }
 
-@font-face {
-  font-family: "Freeman Regular";
-  src: url(../fonts/Freeman-Regular.woff2);
-}
+// @font-face {
+//   font-family: "Freeman Regular";
+//   src: url(../fonts/Freeman-Regular.woff2);
+// }
 
 //Variables
 $color-black:#000;
@@ -230,8 +230,8 @@ $color-red:#d90429;
 $nanum-regular:"Nanum Regular";
 $nanum-bold:"Nanum Bold";
 $nanum-extra-bold:"Nanum Extra Bold";
-$courgette-regular:"Courgette Regular";
-$freeman-regular:"Freeman regular";
+// $courgette-regular:"Courgette Regular";
+// $freeman-regular:"Freeman regular";
 
 //SCSS Styles
 //Header
@@ -254,9 +254,6 @@ header {
 
 //Main
 main {
-
-
-
   .hero-shot {
     background-image: url(../images/hero-shot.jpg);
     background-repeat: no-repeat;
@@ -374,6 +371,40 @@ main {
     }
   }
 
+  //Students Navbar
+  .student-menu-navbar {
+    max-width: 80%;
+    margin: 15px auto 50px;
+    display: flex;
+    justify-content: space-between;
+
+
+    span {
+      cursor: pointer;
+      font-family: $nanum-extra-bold;
+      font-size: 18px;
+      color: $color-black;
+      text-transform: uppercase;
+      padding: 0 15px;
+
+      &:hover {
+        color: $color-red;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .student-menu {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .js-student-menu {
+    max-height: 100%;
+    height: auto;
+
+  }
+
   .ilija {
     .products-menu {
       background-color: $color-light-gray;
@@ -473,7 +504,8 @@ main {
               h2 {
                 font-size: 15px;
                 font-weight: bold;
-                font-family: $freeman-regular;
+                //font-family: $freeman-regular;
+                font-family: $nanum-regular;
                 letter-spacing: 0.8px;
                 cursor: pointer;
               }
@@ -494,7 +526,7 @@ main {
     .product-menu {
       h3 {
         display: flex;
-        font-family: $courgette-regular;
+        //font-family: $courgette-regular;
         font-weight: bold;
         font-size: 25px;
         color: $color-red;
@@ -527,7 +559,8 @@ main {
         font-size: 35px;
         color: $color-black;
         text-align: center;
-        font-family: $freeman-regular;
+        //font-family: $freeman-regular;
+        font-family: $nanum-regular;
         padding-top: 20px;
         cursor: pointer;
       }
@@ -549,7 +582,8 @@ main {
           .food {
             display: flex;
             flex-direction: column;
-            font-family: $freeman-regular;
+            //font-family: $freeman-regular;
+            font-family: $nanum-regular;
             cursor: pointer;
 
             .food-item {
@@ -568,5 +602,7 @@ main {
 
     }
   }
+
+
 
 }

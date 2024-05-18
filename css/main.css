@@ -110,14 +110,6 @@ select:active {
   font-family: "Nanum Extra Bold";
   src: url(../fonts/NanumMyeongjo-ExtraBold.woff2);
 }
-@font-face {
-  font-family: "Courgette Regular";
-  src: url(../fonts/Courgette-Regular.woff);
-}
-@font-face {
-  font-family: "Freeman Regular";
-  src: url(../fonts/Freeman-Regular.woff2);
-}
 header {
   display: flex;
   padding: 10px 30px;
@@ -234,6 +226,32 @@ main .reserve-table .submit {
   border-radius: 10px;
   margin: 10px auto;
 }
+main .student-menu-navbar {
+  max-width: 80%;
+  margin: 15px auto 50px;
+  display: flex;
+  justify-content: space-between;
+}
+main .student-menu-navbar span {
+  cursor: pointer;
+  font-family: "Nanum Extra Bold";
+  font-size: 18px;
+  color: #000;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+main .student-menu-navbar span:hover {
+  color: #d90429;
+  text-decoration: underline;
+}
+main .student-menu {
+  height: 0;
+  overflow: hidden;
+}
+main .js-student-menu {
+  max-height: 100%;
+  height: auto;
+}
 main .ilija .products-menu {
   background-color: #c7c7c7;
 }
@@ -315,7 +333,7 @@ main .elena .allFoodContainer .food-container .breakfast-container .description 
 main .elena .allFoodContainer .food-container .breakfast-container .description .price-container h2 {
   font-size: 15px;
   font-weight: bold;
-  font-family: "Freeman regular";
+  font-family: "Nanum Regular";
   letter-spacing: 0.8px;
   cursor: pointer;
 }
@@ -328,7 +346,6 @@ main .elena .allFoodContainer .food-container .breakfast-container .description 
 }
 main .elena .product-menu h3 {
   display: flex;
-  font-family: "Courgette Regular";
   font-weight: bold;
   font-size: 25px;
   color: #d90429;
@@ -355,7 +372,7 @@ main .elena .product-menu .second-heading {
   font-size: 35px;
   color: #000;
   text-align: center;
-  font-family: "Freeman regular";
+  font-family: "Nanum Regular";
   padding-top: 20px;
   cursor: pointer;
 }
@@ -375,7 +392,7 @@ main .elena .product-menu .food-list .food-type .icon-img {
 main .elena .product-menu .food-list .food-type .food {
   display: flex;
   flex-direction: column;
-  font-family: "Freeman regular";
+  font-family: "Nanum Regular";
   cursor: pointer;
 }
 main .elena .product-menu .food-list .food-type .food .food-item {
