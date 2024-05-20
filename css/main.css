@@ -211,7 +211,6 @@ main .reserve-table .input-pair input[type=date] {
 }
 main .reserve-table .input-pair input[type=range] {
   width: 150px;
-  -webkit-appearance: none;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -403,4 +402,113 @@ main .elena .product-menu .food-list .food-type .food .food-item {
 main .elena .product-menu .food-list .food-type .food .typeOfFood {
   font-weight: bold;
   color: #000;
+}
+main .delivery-title {
+  font-family: "Nanum Extra Bold";
+  font-size: 20px;
+  text-transform: uppercase;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
+  letter-spacing: 0.75px;
+  margin: 40px auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+main .delivery-title h3:after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  border-radius: 30px;
+  margin: 5px auto;
+  background-color: #d90429;
+}
+main .delivery-inner {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+}
+main .delivery-inner .delivery-options {
+  margin: 0 15%;
+  width: 30%;
+}
+main .delivery-inner .delivery-options-item {
+  width: 100%;
+}
+main .delivery-inner .delivery-options-item .delivery-option-title {
+  display: flex;
+  font-family: "Nanum Bold";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+main .delivery-inner .delivery-options-item .delivery-option-title .delivery-option-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+main .delivery-inner .delivery-options-item .delivery-option-title .delivery-option-btn:after {
+  content: "|";
+  position: absolute;
+  left: -2.5px;
+  height: 0;
+  overflow: hidden;
+}
+main .delivery-inner .delivery-options-item .delivery-option-title .delivery-option-btn:before {
+  content: "|";
+  position: absolute;
+  transform: rotate(90deg);
+  margin: auto;
+}
+main .delivery-inner .delivery-options-item .checkbox-list {
+  margin: 10px 0;
+}
+main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox {
+  margin: 5px 0;
+  text-transform: capitalize;
+  font-family: "Nanum Bold";
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox .checkbox {
+  height: 16px;
+  width: 16px;
+  z-index: 15;
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox .box-icon {
+  border: 2px solid #fff;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: black;
+  display: block;
+  position: absolute;
+  left: 2px;
+}
+main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox .checkbox-label {
+  cursor: pointer;
+}
+main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox input[type=checkbox]:checked ~ .checkbox-label {
+  color: #d90429;
+}
+main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox input[type=checkbox]:checked ~ .box-icon {
+  background-color: #d90429;
+  background-image: url(../images/checkbox-chexked.svg);
+  border: 0;
 }
