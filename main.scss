@@ -647,6 +647,8 @@ main {
             font-family: $nanum-bold;
             text-transform: uppercase;
             letter-spacing: 1px;
+            cursor: pointer;
+
 
             .delivery-option-btn {
               position: relative;
@@ -661,6 +663,7 @@ main {
                 left: -2.5px;
                 height: 0;
                 overflow: hidden;
+                transition: height 0.5s ease-in-out;
               }
 
               &:before {
@@ -675,6 +678,9 @@ main {
 
           .checkbox-list {
             margin: 10px 0;
+            height: 0;
+            overflow: hidden;
+            transition: height 0.5s ease-in-out;
 
             .options-checkbox {
               margin: 5px 0;
@@ -710,7 +716,7 @@ main {
                 cursor: pointer;
               }
 
-              input[type="checkbox"] {
+              input[type="radio"] {
                 appearance: none;
 
                 &:checked {
@@ -729,8 +735,54 @@ main {
               }
             }
           }
+
+          .js-delivery-option-title {
+            .delivery-option-btn {
+
+              &:after {
+                transition: height 0.5s ease-in-out;
+                height: 16px;
+              }
+            }
+          }
+
+          .js-checkbox-list {
+            height: 80px;
+            transition: height 0.5s ease-in-out;
+          }
         }
       }
+    }
+
+    .cart {
+      display: block;
+      background-color: $color-black;
+      line-height: normal;
+      padding: 20px;
+
+      &-btn {
+        display: block;
+        background-color: transparent;
+        color: $color-red;
+        border-radius: 10px;
+        font-family: $nanum-extra-bold;
+        font-size: 16px;
+        border: 1px solid $color-red;
+        padding: 5px 30px;
+        text-transform: uppercase;
+        width: fit-content;
+        margin: 10px auto;
+        cursor: pointer;
+        margin-top: 0;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          color: $color-white;
+          background-color: $color-red;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+
     }
   }
 

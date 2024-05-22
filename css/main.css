@@ -443,6 +443,7 @@ main .delivery-inner .delivery-options-item .delivery-option-title {
   font-family: "Nanum Bold";
   text-transform: uppercase;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 main .delivery-inner .delivery-options-item .delivery-option-title .delivery-option-btn {
   position: relative;
@@ -457,6 +458,7 @@ main .delivery-inner .delivery-options-item .delivery-option-title .delivery-opt
   left: -2.5px;
   height: 0;
   overflow: hidden;
+  transition: height 0.5s ease-in-out;
 }
 main .delivery-inner .delivery-options-item .delivery-option-title .delivery-option-btn:before {
   content: "|";
@@ -466,6 +468,9 @@ main .delivery-inner .delivery-options-item .delivery-option-title .delivery-opt
 }
 main .delivery-inner .delivery-options-item .checkbox-list {
   margin: 10px 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
 }
 main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox {
   margin: 5px 0;
@@ -499,16 +504,52 @@ main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox .bo
 main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox .checkbox-label {
   cursor: pointer;
 }
-main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox input[type=checkbox] {
+main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox input[type=radio] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
-main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox input[type=checkbox]:checked ~ .checkbox-label {
+main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox input[type=radio]:checked ~ .checkbox-label {
   color: #d90429;
 }
-main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox input[type=checkbox]:checked ~ .box-icon {
+main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox input[type=radio]:checked ~ .box-icon {
   background-color: #d90429;
   background-image: url(../images/checkbox-chexked.svg);
   border: 0;
+}
+main .delivery-inner .delivery-options-item .js-delivery-option-title .delivery-option-btn:after {
+  transition: height 0.5s ease-in-out;
+  height: 16px;
+}
+main .delivery-inner .delivery-options-item .js-checkbox-list {
+  height: 80px;
+  transition: height 0.5s ease-in-out;
+}
+main .delivery .cart {
+  display: block;
+  background-color: #000;
+  line-height: normal;
+  padding: 20px;
+}
+main .delivery .cart-btn {
+  display: block;
+  background-color: transparent;
+  color: #d90429;
+  border-radius: 10px;
+  font-family: "Nanum Extra Bold";
+  font-size: 16px;
+  border: 1px solid #d90429;
+  padding: 5px 30px;
+  text-transform: uppercase;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  cursor: pointer;
+  margin-top: 0;
+  transition: all 0.5s ease-in-out;
+}
+main .delivery .cart-btn:hover {
+  color: #fff;
+  background-color: #d90429;
+  transition: all 0.5s ease-in-out;
 }
