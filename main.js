@@ -30,3 +30,28 @@ for (const [i, heading] of studentName.entries()) {
     studentMenu[i].classList.add("js-student-menu");
   });
 }
+
+//Checkbox Payment & Delivery
+//Function Example
+// function RadioBtn() {
+//   const deliveryOptions = document.querySelector(".delivery-options-list");
+//   const paymentOptions = document.querySelector(".payment-options");
+//   const checkbox = document.querySelectorAll(".checkbox");
+//   for (const [i, heading] of checkbox.entries()) {
+//     checkbox[i].addEventListener("click", (e) => {
+//       checkbox.forEach((checkbox) => checkbox.classList.remove("js-checkbox"));
+//       checkbox[i].classList.add("js-checkbox");
+//     });
+//   }
+// }
+
+const checkboxList = document.querySelectorAll(".checkbox-list");
+const deliveryOptionTitle = document.querySelectorAll(".delivery-option-title");
+
+for (const [elena] of deliveryOptionTitle.entries()) {
+  deliveryOptionTitle[elena].addEventListener("click", () => {
+    // console.log(elena);
+    deliveryOptionTitle[elena].classList.toggle("js-delivery-option-title");
+    checkboxList[elena].classList.toggle("js-checkbox-list");
+  });
+}
