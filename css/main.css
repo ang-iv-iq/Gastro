@@ -403,6 +403,67 @@ main .elena .product-menu .food-list .food-type .food .typeOfFood {
   font-weight: bold;
   color: #000;
 }
+main .marija .healthy-food-menu {
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+main .marija .healthy-food-menu .menu-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+main .marija .healthy-food-menu .menu-header h3 {
+  margin: 0;
+  font-size: 24px;
+}
+main .marija .healthy-food-menu .menu-header h2 {
+  margin: 5px 0 0;
+  font-size: 28px;
+}
+main .marija .healthy-food-menu .food-categories {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+main .marija .healthy-food-menu .food-categories .category {
+  text-align: center;
+}
+main .marija .healthy-food-menu .food-categories .category h4 {
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+main .marija .healthy-food-menu .food-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+main .marija .healthy-food-menu .food-items .food-item {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+main .marija .healthy-food-menu .food-items .food-item .item-details {
+  margin-left: 10px;
+}
+main .marija .healthy-food-menu .food-items .food-item .item-details h3 {
+  margin: 0;
+  font-size: 18px;
+}
+main .marija .healthy-food-menu .food-items .food-item .item-details .price {
+  font-size: 16px;
+  color: #888;
+}
+main .marija .healthy-food-menu .food-items .food-item .item-details p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
 main .delivery-title {
   font-family: "Nanum Extra Bold";
   font-size: 20px;
@@ -552,4 +613,4 @@ main .delivery .cart-btn:hover {
   color: #fff;
   background-color: #d90429;
   transition: all 0.5s ease-in-out;
-}
+}/*# sourceMappingURL=main.css.map */
