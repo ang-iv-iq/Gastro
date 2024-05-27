@@ -516,7 +516,7 @@ main .delivery-inner .delivery-options-item .delivery-option-title .delivery-opt
 main .delivery-inner .delivery-options-item .delivery-option-title .delivery-option-btn:after {
   content: "|";
   position: absolute;
-  left: -2.5px;
+  left: -3.5px;
   height: 0;
   overflow: hidden;
   transition: height 0.5s ease-in-out;
@@ -613,4 +613,58 @@ main .delivery .cart-btn:hover {
   color: #fff;
   background-color: #d90429;
   transition: all 0.5s ease-in-out;
-}/*# sourceMappingURL=main.css.map */
+}
+main .about h3 {
+  font-family: "Nanum Extra Bold";
+  font-size: 20px;
+  text-transform: uppercase;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
+  letter-spacing: 0.75px;
+  margin: 40px auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+main .about h3:after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  border-radius: 30px;
+  margin: 5px auto;
+  background-color: #d90429;
+}
+main .about-info {
+  max-width: 80%;
+  margin: 15px auto;
+  text-align: center;
+  font-family: "Nanum Bold";
+}
+main .about-facts {
+  max-width: 80%;
+  margin: 30px auto;
+}
+main .about-facts-inner {
+  display: flex;
+  justify-content: space-between;
+}
+main .about-facts-inner .about-facts-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .about-facts-inner .about-facts-item img {
+  width: 150px;
+  height: auto;
+  filter: brightness(0) saturate(100%) invert(9%) sepia(50%) saturate(7086%) hue-rotate(341deg) brightness(151%) contrast(109%);
+}
+main .about-facts-inner .about-facts-item span {
+  font-family: "Nanum Extra Bold";
+  font-size: 20px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  width: 150px;
+  text-align: center;
+  line-height: 25px;
+}

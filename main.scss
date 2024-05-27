@@ -609,43 +609,43 @@ main {
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
-    
+
       .menu-header {
         text-align: center;
         margin-bottom: 20px;
-    
+
         h3 {
           margin: 0;
           font-size: 24px;
         }
-    
+
         h2 {
           margin: 5px 0 0;
           font-size: 28px;
         }
       }
-    
+
       .food-categories {
         display: flex;
         justify-content: space-around;
         margin-bottom: 20px;
-    
+
         .category {
           text-align: center;
-    
+
           h4 {
             margin: 10px 0 0;
             font-size: 18px;
           }
         }
       }
-    
+
       .food-items {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         gap: 20px;
-    
+
         .food-item {
           display: flex;
           align-items: center;
@@ -653,20 +653,20 @@ main {
           background-color: #f9f9f9;
           padding: 10px;
           border-radius: 8px;
-    
+
           .item-details {
             margin-left: 10px;
-    
+
             h3 {
               margin: 0;
               font-size: 18px;
             }
-    
+
             .price {
               font-size: 16px;
               color: #888;
             }
-    
+
             p {
               margin: 5px 0 0;
               font-size: 14px;
@@ -736,7 +736,7 @@ main {
               &:after {
                 content: "|";
                 position: absolute;
-                left: -2.5px;
+                left: -3.5px;
                 height: 0;
                 overflow: hidden;
                 transition: height 0.5s ease-in-out;
@@ -859,6 +859,69 @@ main {
         }
       }
 
+    }
+  }
+
+  //About
+  .about {
+    h3 {
+      font-family: $nanum-extra-bold;
+      font-size: 20px;
+      text-transform: uppercase;
+      tab-size: 4;
+      letter-spacing: 0.75px;
+      margin: 40px auto;
+      text-align: center;
+      margin-bottom: 10px;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 80%;
+        height: 2px;
+        border-radius: 30px;
+        margin: 5px auto;
+        background-color: $color-red;
+      }
+    }
+
+    &-info {
+      max-width: 80%;
+      margin: 15px auto;
+      text-align: center;
+      font-family: $nanum-bold;
+    }
+
+    &-facts {
+      max-width: 80%;
+      margin: 30px auto;
+
+      &-inner {
+        display: flex;
+        justify-content: space-between;
+
+        .about-facts-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            width: 150px;
+            height: auto;
+            filter: brightness(0) saturate(100%) invert(9%) sepia(50%) saturate(7086%) hue-rotate(341deg) brightness(151%) contrast(109%);
+          }
+
+          span {
+            font-family: $nanum-extra-bold;
+            font-size: 20px;
+            margin-top: 15px;
+            text-transform: uppercase;
+            width: 150px;
+            text-align: center;
+            line-height: 25px;
+          }
+        }
+      }
     }
   }
 
