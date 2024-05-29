@@ -927,3 +927,97 @@ main {
 
 
 }
+
+//Footer
+footer {
+  background-color: $color-black;
+  color: $color-white;
+  font-family: $nanum-regular;
+  font-size: 16px;
+  padding: 30px 0;
+  background-image: url(../images/gastro-logo-short.svg);
+  background-repeat: no-repeat;
+  background-size: 170px;
+  background-position: bottom left;
+
+  .footer-inner {
+    max-width: 80%;
+    margin: 10px auto;
+
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 15px;
+
+      .footer-item {
+        h3 {
+          font-family: $nanum-extra-bold;
+          font-size: 18px;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+        }
+
+        &-info {
+          display: flex;
+          flex-direction: column;
+
+          div {
+            display: flex;
+            justify-content: space-between;
+          }
+
+          span {
+            padding-bottom: 5px;
+            display: block;
+
+            &:nth-of-type(2) {
+              text-align: right;
+              margin-left: 15px;
+            }
+          }
+
+          &.footer-location {
+            span {
+              &:nth-of-type(2) {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+
+
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      padding: 15px;
+      justify-content: space-between;
+
+      a {
+        color: $color-white;
+        font-family: $nanum-regular;
+        font-size: 16px;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.5s linear;
+        transition: color 0.5s linear;
+        padding-bottom: 3px;
+
+        &:not(:last-of-type) {
+          margin-right: 15px;
+        }
+
+        &:hover {
+          color: $color-red;
+          border-color: $color-red;
+          transition: border-color 0.5s linear;
+          transition: color 0.5s linear;
+        }
+      }
+
+    }
+  }
+}
