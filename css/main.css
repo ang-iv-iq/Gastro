@@ -668,3 +668,75 @@ main .about-facts-inner .about-facts-item span {
   text-align: center;
   line-height: 25px;
 }
+
+footer {
+  background-color: #000;
+  color: #fff;
+  font-family: "Nanum Regular";
+  font-size: 16px;
+  padding: 30px 0;
+  background-image: url(../images/gastro-logo-short.svg);
+  background-repeat: no-repeat;
+  background-size: 170px;
+  background-position: bottom left;
+}
+footer .footer-inner {
+  max-width: 80%;
+  margin: 10px auto;
+}
+footer .footer-inner-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+footer .footer-inner-top .footer-item h3 {
+  font-family: "Nanum Extra Bold";
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+footer .footer-inner-top .footer-item-info {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-inner-top .footer-item-info div {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-inner-top .footer-item-info span {
+  padding-bottom: 5px;
+  display: block;
+}
+footer .footer-inner-top .footer-item-info span:nth-of-type(2) {
+  text-align: right;
+  margin-left: 15px;
+}
+footer .footer-inner-top .footer-item-info.footer-location span:nth-of-type(2) {
+  margin-left: 0;
+}
+footer .footer-inner-bottom {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+}
+footer .footer-inner-bottom a {
+  color: #fff;
+  font-family: "Nanum Regular";
+  font-size: 16px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.5s linear;
+  transition: color 0.5s linear;
+  padding-bottom: 3px;
+}
+footer .footer-inner-bottom a:not(:last-of-type) {
+  margin-right: 15px;
+}
+footer .footer-inner-bottom a:hover {
+  color: #d90429;
+  border-color: #d90429;
+  transition: border-color 0.5s linear;
+  transition: color 0.5s linear;
+}
