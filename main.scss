@@ -234,6 +234,11 @@ $nanum-extra-bold:"Nanum Extra Bold";
 // $freeman-regular:"Freeman regular";
 
 //SCSS Styles
+//Body 
+body {
+  overflow-x: hidden;
+}
+
 //Header
 header {
   display: flex;
@@ -241,6 +246,10 @@ header {
   background-color: $color-black;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 20;
 
   nav {
     a {
@@ -248,12 +257,79 @@ header {
       font-family: $nanum-regular;
       text-transform: uppercase;
       margin: 0 15px;
+
+      &:hover {
+        color: $color-red;
+      }
     }
   }
+
+  @include media-up(m) {
+
+    .burger-menu-btn,
+    .close-burger-menu-btn {
+      display: none;
+    }
+  }
+
+  @include media-down(m) {
+    nav {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      height: 100vh;
+      top: 0;
+      right: -100%;
+      background-color: $color-black;
+      width: 30%;
+      z-index: 20;
+      padding: 15px;
+      align-items: center;
+      padding-top: 30px;
+      transition: right 0.5s ease-in-out;
+
+      a {
+        margin: 15px;
+
+        &:first-of-type {
+          margin-top: 30px;
+        }
+      }
+
+      .close-burger-menu-btn {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+      }
+    }
+
+    .js-burger-menu {
+      transition: right 0.5s ease-in-out;
+      right: 0;
+    }
+
+
+  }
+}
+
+.overlay {
+  width: 0;
+  height: 100vh;
+  position: absolute;
+  background-color: $color-black;
+  opacity: 0.75;
+  transition: width 0.5s ease-in-out;
+}
+
+.js-overlay {
+  width: 100vw;
+  transition: width 0.5s ease-in-out;
 }
 
 //Main
 main {
+  margin-top: 45px;
+
   .hero-shot {
     background-image: url(../images/hero-shot.jpg);
     background-repeat: no-repeat;
@@ -721,7 +797,7 @@ main {
         font-size: 15px;
         max-width: 1200px;
         padding-top: 20px;
-
+        margin: 0 auto;
       }
 
 
