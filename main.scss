@@ -678,6 +678,68 @@ main {
     }
   }
 
+  .todor {
+    .fastfood-container {
+      font-family: $nanum-regular;
+      color: #333;
+      // margin: 250px;
+      padding: 15px;
+      background-color: #bdb76b;
+      background-size: cover;
+
+      h1 {
+        font-family: $nanum-bold;
+        font-size: 20px;
+      }
+
+      .menu-content {
+        text-align: center;
+        padding-top: 20px;
+
+        h1 {
+          width: 400px;
+          height: 400px;
+          font-family: $nanum-bold;
+          text-align: center;
+
+        }
+      }
+
+      .span {
+        font-family: $nanum-extra-bold;
+        font-size: 30px;
+      }
+
+      .menu-img {
+        align-items: center;
+        margin: 0px;
+      }
+
+
+      .menu-item {
+        text-align: center;
+        font-size: 15px;
+        max-width: 1200px;
+        padding-top: 20px;
+
+      }
+
+
+      .menu-Zubehör {
+        text-align: center;
+        padding: 10px 0;
+        letter-spacing: 0.8px;
+        max-width: 70%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+
+      }
+
+
+    }
+  }
+
+
   //Delivery
   .delivery {
     &-title {
