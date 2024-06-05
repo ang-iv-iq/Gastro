@@ -173,6 +173,11 @@ header nav a:hover {
     right: 0;
   }
 }
+@media (max-width: 767.98px) {
+  header nav {
+    width: 100%;
+  }
+}
 
 .overlay {
   width: 0;
@@ -181,6 +186,8 @@ header nav a:hover {
   background-color: #000;
   opacity: 0.75;
   transition: width 0.5s ease-in-out;
+  top: 0;
+  left: 0;
 }
 
 .js-overlay {
@@ -234,6 +241,14 @@ main .reserve-table form {
   display: flex;
   flex-wrap: wrap;
   background-color: #000;
+}
+@media (max-width: 575.98px) {
+  main .reserve-table form {
+    flex-direction: column;
+  }
+  main .reserve-table form .input-pair {
+    width: 100%;
+  }
 }
 main .reserve-table .input-pair {
   width: 50%;
@@ -302,6 +317,18 @@ main .student-menu-navbar span {
 main .student-menu-navbar span:hover {
   color: #d90429;
   text-decoration: underline;
+}
+@media (max-width: 991.98px) {
+  main .student-menu-navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .student-menu-navbar span {
+    margin: 10px 0;
+  }
+}
+main .js-student-name {
+  color: #d90429 !important;
 }
 main .student-menu {
   height: 0;
@@ -730,6 +757,15 @@ main .delivery-inner .delivery-options-item .js-checkbox-list {
   height: 80px;
   transition: height 0.5s ease-in-out;
 }
+@media (max-width: 575.98px) {
+  main .delivery-inner {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  main .delivery-inner .delivery-options {
+    width: auto;
+  }
+}
 main .delivery .cart {
   display: block;
   background-color: #000;
@@ -809,6 +845,20 @@ main .about-facts-inner .about-facts-item span {
   text-align: center;
   line-height: 25px;
 }
+@media (max-width: 767.98px) {
+  main .about .about-facts-item img {
+    width: 50px;
+    height: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  main .about .about-facts-inner {
+    flex-direction: column;
+  }
+  main .about .about-facts-inner .about-facts-item {
+    margin-bottom: 15px;
+  }
+}
 
 footer {
   background-color: #000;
@@ -880,4 +930,4 @@ footer .footer-inner-bottom a:hover {
   border-color: #d90429;
   transition: border-color 0.5s linear;
   transition: color 0.5s linear;
-}/*# sourceMappingURL=main.css.map */
+}

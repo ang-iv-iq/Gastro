@@ -28,6 +28,17 @@ for (const [i, heading] of studentName.entries()) {
       student.classList.remove("js-student-menu")
     );
     studentMenu[i].classList.add("js-student-menu");
+
+    studentName.forEach((name) => name.classList.remove("js-student-name"));
+    studentName[i].classList.add("js-student-name");
+
+    //Checks if element contains class
+
+    // if (studentMenu[i].classList.contains("js-student-menu")) {
+    //   studentName[i].classList.add("js-student-name");
+    // } else {
+    //   studentName[i].classList.remove("js-student-name");
+    // }
   });
 }
 
@@ -66,11 +77,17 @@ const overlay = document.querySelector(".overlay");
 burgerMenuBtn.addEventListener("click", () => {
   nav.classList.add("js-burger-menu");
   overlay.classList.add("js-overlay");
-  body.style.position = "fixed";
+  body.style.overflow = "hidden";
 });
 
 burgerMenuBtnClose.addEventListener("click", () => {
   nav.classList.remove("js-burger-menu");
   overlay.classList.remove("js-overlay");
-  body.style.position = "relative";
+  body.style.overflow = "auto";
+});
+
+overlay.addEventListener("click", () => {
+  nav.classList.remove("js-burger-menu");
+  overlay.classList.remove("js-overlay");
+  body.style.overflow = "auto";
 });
