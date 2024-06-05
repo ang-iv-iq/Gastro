@@ -321,8 +321,7 @@ main .ilija .products-menu .section-title p {
   font-family: "Nanum Regular";
   color: #000;
   font-weight: bolder;
-  padding: 0;
-  margin: 0;
+  padding: 15px;
 }
 main .ilija .products-menu .menu-container {
   display: flex;
