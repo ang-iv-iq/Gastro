@@ -567,6 +567,53 @@ main .todor .fastfood-container .menu-Zubehör {
   margin: 0 auto;
   margin-bottom: 15px;
 }
+main .angela .products-container {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+main .angela .products-container .list-of-foods {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  padding: 0 auto;
+}
+main .angela .products-container .meal-type {
+  padding-top: 20px;
+  color: #c7c7c7;
+}
+main .angela .products-container .breakfast-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+main .angela .products-container .food-image {
+  margin-top: 20px;
+}
+main .angela .products-container .product-info {
+  display: flex;
+  flex-direction: column;
+}
+main .angela .products-container .products-menu h2 {
+  display: flex;
+  font-family: "Nanum Bold";
+  font-size: 30px;
+  color: #000;
+  justify-content: center;
+  margin: auto;
+  max-width: 50%;
+}
+main .angela .products-container .products-menu .second-title {
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Nanum Regular";
+}
 main .delivery-title {
   font-family: "Nanum Extra Bold";
   font-size: 20px;

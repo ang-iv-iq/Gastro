@@ -815,6 +815,72 @@ main {
     }
   }
 
+  .angela {
+    .products-container {
+      padding-top: 50px;
+      padding-bottom: 40px;
+      display: flex;
+      justify-content: center;
+
+      .list-of-foods {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        padding: 0 auto;
+      }
+
+      .meal-type {
+        padding-top: 20px;
+        color: $color-light-gray;
+      }
+
+      .breakfast-container {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      .food-image {
+        margin-top: 20px;
+
+      }
+
+      .product-info {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .products-menu {
+        h2 {
+          display: flex;
+          font-family: $nanum-bold;
+          font-size: 30px;
+          color: $color-black;
+          justify-content: center;
+          margin: auto;
+          max-width: 50%;
+        }
+
+        .second-title {
+          font-size: 20px;
+          color: $color-black;
+          text-align: center;
+          padding-top:10px;
+          padding-bottom: 10px;
+          font-family: $nanum-regular;
+        }
+      }
+
+
+        
+      
+
+
+    }
+  }
+
 
   //Delivery
   .delivery {
