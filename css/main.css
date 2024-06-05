@@ -216,9 +216,7 @@ main .reserve-table h3 {
   font-family: "Nanum Extra Bold";
   font-size: 20px;
   text-transform: uppercase;
-  -moz-tab-size: 4;
-    -o-tab-size: 4;
-       tab-size: 4;
+  tab-size: 4;
   letter-spacing: 0.75px;
   margin: 10px auto;
   text-align: center;
@@ -259,11 +257,6 @@ main .reserve-table .input-pair input[type=text] {
   padding: 5px 0;
   border-bottom: 1px solid #fff;
   caret-color: #d90429;
-}
-main .reserve-table .input-pair input[type=text]::-moz-placeholder {
-  color: #fff;
-  font-size: 14px;
-  line-height: 20px;
 }
 main .reserve-table .input-pair input[type=text]::placeholder {
   color: #fff;
@@ -578,9 +571,7 @@ main .delivery-title {
   font-family: "Nanum Extra Bold";
   font-size: 20px;
   text-transform: uppercase;
-  -moz-tab-size: 4;
-    -o-tab-size: 4;
-       tab-size: 4;
+  tab-size: 4;
   letter-spacing: 0.75px;
   margin: 40px auto;
   text-align: center;
@@ -657,9 +648,7 @@ main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox .ch
   width: 16px;
   z-index: 15;
   display: block;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   cursor: pointer;
 }
 main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox .box-icon {
@@ -676,9 +665,7 @@ main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox .ch
   cursor: pointer;
 }
 main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox input[type=radio] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox input[type=radio]:checked ~ .checkbox-label {
   color: #d90429;
@@ -712,7 +699,6 @@ main .delivery .cart-btn {
   border: 1px solid #d90429;
   padding: 5px 30px;
   text-transform: uppercase;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 10px auto;
   cursor: pointer;
@@ -728,9 +714,7 @@ main .about h3 {
   font-family: "Nanum Extra Bold";
   font-size: 20px;
   text-transform: uppercase;
-  -moz-tab-size: 4;
-    -o-tab-size: 4;
-       tab-size: 4;
+  tab-size: 4;
   letter-spacing: 0.75px;
   margin: 40px auto;
   text-align: center;
