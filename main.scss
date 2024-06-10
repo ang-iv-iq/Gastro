@@ -251,6 +251,21 @@ header {
   top: 0;
   z-index: 20;
 
+  .search-section {
+    background-color: $color-white;
+    border-radius: 30px;
+    width: 400px;
+    padding: 5px 10px;
+
+    form {
+      display: flex;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+
   nav {
     a {
       color: $color-white;
@@ -312,6 +327,21 @@ header {
   }
 
   @include media-down(s) {
+    flex-wrap: wrap;
+    transition: height 0.5s ease-in-out;
+
+    .search-section {
+      order: 3;
+      width: 100%;
+      margin: 15px 0;
+    }
+
+    &.menu-scroll {
+      height: 45px;
+      overflow: hidden;
+      transition: height 0.5s ease-in-out;
+    }
+
     nav {
       width: 100%;
     }
