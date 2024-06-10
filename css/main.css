@@ -126,6 +126,18 @@ header {
   top: 0;
   z-index: 20;
 }
+header .search-section {
+  background-color: #fff;
+  border-radius: 30px;
+  width: 400px;
+  padding: 5px 10px;
+}
+header .search-section form {
+  display: flex;
+}
+header .search-section form input {
+  width: 100%;
+}
 header nav a {
   color: #fff;
   font-family: "Nanum Regular";
@@ -174,6 +186,20 @@ header nav a:hover {
   }
 }
 @media (max-width: 767.98px) {
+  header {
+    flex-wrap: wrap;
+    transition: height 0.5s ease-in-out;
+  }
+  header .search-section {
+    order: 3;
+    width: 100%;
+    margin: 15px 0;
+  }
+  header.menu-scroll {
+    height: 45px;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+  }
   header nav {
     width: 100%;
   }

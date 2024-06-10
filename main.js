@@ -91,3 +91,29 @@ overlay.addEventListener("click", () => {
   overlay.classList.remove("js-overlay");
   body.style.overflow = "auto";
 });
+
+//Search Functionality
+const inputSearch = document.querySelector(".search-input");
+inputSearch.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    window.open(`https://www.allrecipes.com/search?q=${inputSearch.value}`);
+
+    //Open search results in the same tab
+
+    // window.open(
+    //   `https://www.allrecipes.com/search?q=${inputSearch.value}`,
+    //   "_self"
+    // );
+  }
+});
+
+// Hide header on scroll
+if (window.innerWidth < 768)
+  window.onscroll = function () {
+    if (window.pageYOffset > 50) {
+      document.querySelector(".header").classList.add("menu-scroll");
+    } else {
+      document.querySelector(".header").classList.remove("menu-scroll");
+    }
+  };
