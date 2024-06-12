@@ -249,7 +249,9 @@ main .reserve-table h3 {
   font-family: "Nanum Extra Bold";
   font-size: 20px;
   text-transform: uppercase;
-  tab-size: 4;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
   letter-spacing: 0.75px;
   margin: 10px auto;
   text-align: center;
@@ -298,6 +300,11 @@ main .reserve-table .input-pair input[type=text] {
   padding: 5px 0;
   border-bottom: 1px solid #fff;
   caret-color: #d90429;
+}
+main .reserve-table .input-pair input[type=text]::-moz-placeholder {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
 }
 main .reserve-table .input-pair input[type=text]::placeholder {
   color: #fff;
@@ -435,6 +442,11 @@ main .elena .allFoodContainer .food-container .breakfast-container .description 
   font-size: 15px;
   cursor: pointer;
 }
+@media (max-width: 575.98px) {
+  main .elena .allFoodContainer .food-container .breakfast-container .description p {
+    font-size: 9px;
+  }
+}
 main .elena .allFoodContainer .food-container .breakfast-container .description .price-container {
   display: flex;
   border-bottom: 1px solid rgb(205, 200, 200);
@@ -454,6 +466,19 @@ main .elena .allFoodContainer .food-container .breakfast-container .description 
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+}
+@media (max-width: 575.98px) {
+  main .elena .allFoodContainer .food-container .breakfast-container .description .price-container h2 {
+    font-size: 10px;
+  }
+  main .elena .allFoodContainer .food-container .breakfast-container .description .price-container span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 575.98px) {
+  main .elena .allFoodContainer .food-container .breakfast-container {
+    margin: 0 20%;
+  }
 }
 main .elena .product-menu h3 {
   display: flex;
@@ -514,6 +539,40 @@ main .elena .product-menu .food-list .food-type .food .food-item {
 main .elena .product-menu .food-list .food-type .food .typeOfFood {
   font-weight: bold;
   color: #000;
+}
+@media (max-width: 575.98px) {
+  main .elena .product-menu .food-list .food-type .icon-img {
+    width: 30px;
+    height: 20px;
+    margin: 10px auto;
+  }
+  main .elena .product-menu .food-list .food-type .food-item {
+    font-size: 10px;
+  }
+  main .elena .product-menu .food-list .food-type .typeOfFood {
+    font-size: 10px;
+  }
+}
+@media (max-width: 575.98px) {
+  main .elena .product-menu .food-list .food-type {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  main .elena .product-menu .product-menu,
+  main .elena .product-menu h3 {
+    font-size: 15px;
+  }
+  main .elena .product-menu .second-heading {
+    font-size: 19px;
+  }
+}
+@media (max-width: 767.98px) {
+  main .elena .allFoodContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 main .marija .healthy-food-menu {
   font-family: Arial, sans-serif;
@@ -671,7 +730,9 @@ main .delivery-title {
   font-family: "Nanum Extra Bold";
   font-size: 20px;
   text-transform: uppercase;
-  tab-size: 4;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
   letter-spacing: 0.75px;
   margin: 40px auto;
   text-align: center;
@@ -748,7 +809,9 @@ main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox .ch
   width: 16px;
   z-index: 15;
   display: block;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   cursor: pointer;
 }
 main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox .box-icon {
@@ -765,7 +828,9 @@ main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox .ch
   cursor: pointer;
 }
 main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox input[type=radio] {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 main .delivery-inner .delivery-options-item .checkbox-list .options-checkbox input[type=radio]:checked ~ .checkbox-label {
   color: #d90429;
@@ -808,6 +873,7 @@ main .delivery .cart-btn {
   border: 1px solid #d90429;
   padding: 5px 30px;
   text-transform: uppercase;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 10px auto;
   cursor: pointer;
@@ -823,7 +889,9 @@ main .about h3 {
   font-family: "Nanum Extra Bold";
   font-size: 20px;
   text-transform: uppercase;
-  tab-size: 4;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
   letter-spacing: 0.75px;
   margin: 40px auto;
   text-align: center;
@@ -956,4 +1024,4 @@ footer .footer-inner-bottom a:hover {
   border-color: #d90429;
   transition: border-color 0.5s linear;
   transition: color 0.5s linear;
-}
+}/*# sourceMappingURL=main.css.map */

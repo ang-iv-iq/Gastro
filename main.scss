@@ -627,7 +627,14 @@ main {
               font-family: $nanum-bold;
               font-size: 15px;
               cursor: pointer;
+
+              
             }
+            @include media-down(xs){
+              p {
+                font-size: 9px;
+              }
+             }
 
             .price-container {
               display: flex;
@@ -651,8 +658,20 @@ main {
                 font-weight: bold;
                 cursor: pointer;
               }
+              @include media-down(xs){
+                h2{
+                  font-size: 10px;
+                }
+                span{
+                  font-size:15px ;
+                }
+              }
             }
           }
+          @include media-down(xs){
+            margin: 0 20%;
+          }
+          
         }
       }
     }
@@ -668,6 +687,8 @@ main {
         cursor: pointer;
         max-width: 40%;
         margin: auto;
+
+        
 
         &:before,
         &:after {
@@ -685,10 +706,8 @@ main {
 
         &:after {
           margin-left: 8px;
-        }
+        }        
       }
-
-
       .second-heading {
         font-size: 35px;
         color: $color-black;
@@ -707,6 +726,7 @@ main {
         .food-type {
           display: flex;
           padding-bottom: 20px;
+        
 
           .icon-img {
             cursor: pointer;
@@ -731,9 +751,48 @@ main {
               color: $color-black;
             }
           }
+          @include media-down(xs){
+            
+            .icon-img{
+              width: 30px;
+              height: 20px;
+             
+              margin: 10px auto;
+            
+            }
+            .food-item{
+              font-size: 10px;
+            }
+            .typeOfFood{
+              font-size: 10px;
+            } 
+           
+          }
+        }
+        @include media-down(xs){
+          .food-type{
+           padding-right: 20px;
+         }
+         }
+        
+      }
+      @include media-down(xs){
+        .product-menu,
+        h3{
+          font-size: 15px;
+        }
+        .second-heading{
+          font-size: 19px;
         }
       }
 
+    }
+    @include media-down(s){
+      .allFoodContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 
