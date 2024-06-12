@@ -109,11 +109,36 @@ inputSearch.addEventListener("keypress", (e) => {
 });
 
 // Hide header on scroll
-if (window.innerWidth < 768)
+// if (window.innerWidth < 768)
+// window.onscroll = function () {
+//   if (window.pageYOffset > 50) {
+//     document.querySelector(".header").classList.add("menu-scroll");
+//   } else {
+//     document.querySelector(".header").classList.remove("menu-scroll");
+//   }
+// };
+
+//Header sticky on scroll
+if (window.innerWidth < 768) {
+  let oldValue = 0;
+  let newValue = 0;
+
   window.onscroll = function () {
-    if (window.pageYOffset > 50) {
-      document.querySelector(".header").classList.add("menu-scroll");
-    } else {
-      document.querySelector(".header").classList.remove("menu-scroll");
-    }
+    window.addEventListener("scroll", (e) => {
+      newValue = window.pageYOffset;
+      // console.log(newValue);
+
+      if (oldValue < newValue || newValue > 50) {
+        document.querySelector(".header").classList.add("menu-scroll");
+        console.log(newValue + "newValue1");
+        console.log(oldValue + "oldValue1");
+      } else {
+        document.querySelector(".header").classList.remove("menu-scroll");
+        console.log(newValue + "newValue2");
+        console.log(oldValue + "oldValue2");
+      }
+
+      //oldValue = newValue + 1;
+    });
   };
+}
