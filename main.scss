@@ -565,6 +565,8 @@ main {
           border-radius: 50%;
           float: left;
           border: 2px solid;
+          min-width: 70px;
+          height: 80px;
         }
 
         a {
@@ -589,6 +591,10 @@ main {
           margin: 50px 0px;
           width: 50%;
           font-family: $nanum-bold;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          
         }
       }
 
